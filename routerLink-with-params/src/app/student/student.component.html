@@ -1,0 +1,18 @@
+<div>
+  <h3>Student Details</h3>
+  <table border="1" name = "students">
+    <thead>
+      <th>Name</th>
+      <th>Action</th>
+    </thead>
+    <tr *ngFor="let student of studentsList">
+      <td>
+        {{student.name}}
+      </td>
+      <td>
+        <a (click)="getStudentDetails(student)"><u>View Details</u></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<p> <a (click)="goToHome()"><u>Click here</u></a> to go back to Home page </p>
